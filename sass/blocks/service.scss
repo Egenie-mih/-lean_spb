@@ -1,0 +1,182 @@
+.service
+{
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    color: $font-violet;
+
+    @include oval();
+}
+.service__container
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    @include container();
+}
+.service__nav
+{
+    display: none;
+}
+.service__image
+{
+    text-align: center;
+}
+.service__title
+{
+    font-size: 26px;
+    line-height: 32px;
+
+    margin: 0;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+.service__text
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    margin: 0;
+    margin-bottom: 22px;
+    &--important
+    {
+        font-weight: 700;
+    }
+}
+.service__nav-title
+{
+    display: none;
+}
+
+@media #{$tablet-widths}
+{
+    .service__container
+    {
+        flex-direction: row;
+
+        padding-bottom: 20px;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .service__nav
+    {
+        display: block;
+
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid #d1d1d1;
+    }
+    .service__list
+    {
+        display: -webkit-flex;
+        display:     -ms-flex;
+        display:         flex;
+        flex-direction: row;
+
+        margin: 0;
+        padding: 0;
+
+        flex-wrap: wrap;
+    }
+    .service__item
+    {
+        margin-right: 25px;
+
+        list-style: none;
+        // margin-bottom: 10px;
+    }
+    .service__link
+    {
+        font-size: 14px;
+        line-height: 24px;
+        &--active
+        {
+            font-weight: 700;
+
+            text-decoration: none;
+        }
+    }
+    .service__image
+    {
+        width: 282px;
+
+        order: 1;
+    }
+    .service__description
+    {
+        width: 408px;
+    }
+    .service__title
+    {
+        font-size: 36px;
+        line-height: 40px;
+
+        margin-bottom: 23px;
+
+        letter-spacing: 4px;
+    }
+}
+@media #{$desktop-widths}
+{
+    .service
+    {
+        padding: 70px 0 42px;
+    }
+    .service__nav
+    {
+        width: 181px;
+        margin-top: 7px;
+        margin-bottom: 0;
+
+        border: 0;
+
+        order: 3;
+    }
+    .service__nav-title
+    {
+        font-weight: bold;
+
+        display: block;
+
+        margin-bottom: 26px;
+    }
+    .service__list
+    {
+        flex-direction: column;
+    }
+    .service__image
+    {
+        width: 278px;
+
+        order: 2;
+    }
+    .service__description
+    {
+        width: 447px;
+
+        order: 1;
+    }
+    .service__title
+    {
+        font-size: 36px;
+        line-height: 40px;
+
+        margin-bottom: 35px;
+    }
+    .service__item
+    {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .service__link
+    {
+        line-height: 18px;
+
+        display: block;
+    }
+}

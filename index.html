@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clean Spb</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <div class="page-header__container">
+
+    <a class="logo">
+      <img src="img/logo-header.png" alt="Клининиговая компания Clean Spb" width="97" height="51">
+    </a>
+    <button class="page-header__nav-btn">Открыть Меню</button>
+    <nav class="main-nav" id="menu">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Услуги</a></li>
+        <li class="main-nav__item"><a href="#clients"  onclick="return anchorScroller(this)" class="main-nav__link">Наши клиенты</a></li>
+        <li class="main-nav__item"><a href="#advantages"  onclick="return anchorScroller(this)" class="main-nav__link">О сервисе</a></li>
+        <li class="main-nav__item"><a href="#callback" onclick="return anchorScroller(this)" class="main-nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-header__contacts">
+      <a href="tel:+7(812)4071003" class="page-header__phone">+7 (812) 407 10 03</a>
+      <div class="page-header__time">07:00-22:00</div>
+    </div>
+
+  </div>
+</header>
+
+<main>
+  <section class="promo">
+    <div class="promo__container">
+      <h1 class="promo__title">Профессиональный клиннинг</h1>
+      <p class="promo__text">Для большого и малого бизнесса</p>
+      <div class="promo__image">
+        <picture>
+          <source media="(min-width: 750px)" srcset="img/promo.png">
+          <img src="img/promo-mobile.png" alt="Профессиональный клиннинг" width="276" height="191">
+        </picture>
+      </div>
+      <a href="#callback" onclick="return anchorScroller(this)" class="btn btn--blue promo__btn">Заказать звонок</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features__container">
+      <h2 class="features__title">Услуги</h2>
+      <div class="features__list">
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Комплексная уборка" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Ежедневная комплексная уборка</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-2.png" alt=">Уборка после строительных работ" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Уборка после строительных работ</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Мойка стеклянных поверхностей" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Мойка окон, витрин, остекления</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Мойка фасадов" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Мойка фасадов</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Химчистка ковров" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Химчистка ковров</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Химчистка мягкой мебели" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Химчистка мягкой мебели</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Глубокая размывка напольных покрытий" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Глубокая размывка напольных покрытий</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Шлифовка, кристаллизация и реставрация камня" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Шлифовка, кристаллизация и реставрация камня</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+        <a href="" class="features__item">
+          <picture>
+            <img src="img/service-1.png" alt="Защита напольных покрытий" width="118" height="149">
+          </picture>
+          <h3 class="features__type">Защита напольных покрытий</h3>
+          <span class="features__moreinfo">Узнать подробнее</span>
+        </a>
+      </div>
+      <a href="catalog.html" class="btn btn--white features__btn">Посмотреть остальные услуги</a>
+    </div>
+  </section>
+
+  <section class="clients">
+    <a  name="clients"></a>
+    <div class="clients__container">
+      <h2 class="clients__title">Клиенты</h2>
+      <p class="clients__text">Нам доверяют ежедневную комплексную уборку такие крупные компании как Louis Vuitton, Media Markt, Ginza Project.</p>
+      <div class="clients__logo">
+        <!-- <img src="img/clients.png" alt=""> -->
+        <img src="http://placehold.it/60x100" alt="Логотип клиента" width="60" height="100">
+        <img src="http://placehold.it/80x70" alt="Логотип клиента" width="80" height="70">
+        <img src="http://placehold.it/60x70" alt="Логотип клиента" width="60" height="70">
+        <img src="http://placehold.it/70x110" alt="Логотип клиента" width="70" height="110">
+        <img src="http://placehold.it/100x160" alt="Логотип клиента" width="100" height="160">
+        <img src="http://placehold.it/120x70" alt="Логотип клиента" width="120" height="70">
+        <img src="http://placehold.it/70x110" alt="Логотип клиента" width="70" height="110">
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <a name="advantages"></a>
+    <div class="advantages__container">
+      <h2 class="advantages__title">Как мы работаем</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--staff">
+          <h4 class="advantages__benefit">Опытный персонал</h4>
+          <p class="advantages__description">Работать у Вас будут опытные специалисты, превосходно разбирающиеся во всех аспектах своего дела</p>
+        </li>
+        <li class="advantages__item advantages__item--entity">
+          <h4 class="advantages__benefit">Работа с юридическими лицами</h4>
+          <p class="advantages__description">Большой опыт работы с крупными компаниями. Знаем все тонкости, оформляем необходимые документы.</p>
+        </li>
+        <li class="advantages__item advantages__item--ecology">
+          <h4 class="advantages__benefit">Экологичная уборка</h4>
+          <p class="advantages__description">Используем только профессиональное оборудование и экологичные моющие средства</p>
+        </li>
+        <li class="advantages__item advantages__item--safety">
+          <h4 class="advantages__benefit">Безопасность</h4>
+          <p class="advantages__description">Наша служба безопасности гарантирует квалификацию и надежность каждого сотрудника, а также качество применяемого для клининга оборудования</p>
+        </li>
+        <li class="advantages__item advantages__item--test">
+          <h4 class="advantages__benefit advantages__benefit--test">Бесплатный тест</h4>
+          <p class="advantages__description advantages__description--test">
+            Произведем бесплатный тест независимо от объема работ.<br>
+            Вы можете убедиться в нашем профессионализме бесплатно, и только потом решить работать с нами.
+          </p>
+          <p class="advantages__description advantages__description--bold">Бесплатный тест доступен для услуги химчистки, а так же при работе с камнем (реставрация, шлифовка или кристализация).</p>
+          <p class="advantages__call">Позвоните нам или закажите бесплатный звонок и узнайте больше.</p>
+        </li>
+      </ul>
+      <a href="tel:+7(812)4071003" class="advantages__phone">+7 (812) 407 10 03</a>
+      <a href="#callback" onclick="return anchorScroller(this)" class="btn btn--blue advantages__btn">Заказать звонок</a>
+    </div>
+  </section>
+
+  <section class="callback">
+    <a name="callback"></a>
+    <div class="callback__container">
+      <h3 class="callback__title">Обратный звонок</h3>
+      <p class="callback__text">Мы сами позвоним вам и ответим на все вопросы.</p>
+      <div class="callback__form">
+        <form action="callback.php" method="post">
+          <input type="text" placeholder="Ваше имя">
+          <input type="tel" placeholder="Телефон для связи с вами">
+          <button class="btn btn--violet callback__btn" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+    <div class="page-footer__container">
+      <a class="page-footer__logo">
+        <picture>
+          <img src="img/logo.png" alt="Клининиговая компания Clean Spb" width="130" height="71">
+        </picture>
+      </a>
+
+      <div class="page-footer__nav">
+        <a href="tel:+7(812)4071003" class="page-footer__links">+7 (812) 407 10 03</a>
+        <a href="" class="page-footer__links">a@aepgroup.ru</a>
+        <a href="catalog.html" class="page-footer__links">Услуги</a>
+      </div>
+
+      <div class="copyright">
+        <p class="copyright__text">
+          ООО “Единый подрядчик” ©&nbsp;2010&nbsp;-&nbsp;2017 <br>
+          Все&nbsp;права&nbsp;защищены.
+        </p>
+      </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

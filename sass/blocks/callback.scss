@@ -1,0 +1,167 @@
+.callback
+{
+    padding: 46px 0 30px;
+
+    color: $font-white;
+    background-color: $bg-blue;
+}
+.callback__container
+{
+    @include container();
+}
+.callback__title
+{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+
+    margin: 0 auto 10px;
+    padding: 0 50px;
+
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.callback__text
+{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+    margin-top: 0;
+    margin-bottom: 27px;
+
+    letter-spacing: 2.2px;
+}
+.callback__form
+{
+    input
+    {
+        font-family: 'Roboto Condensed', 'Arial', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+
+        display: block;
+
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 17px;
+        padding: 10px 10px 10px 37px;
+
+        letter-spacing: 1.7px;
+
+        color: $font-violet;
+        border: 0;
+        -webkit-border-radius: 40px;
+           -moz-border-radius: 40px;
+                border-radius: 40px;
+        background-color: $bg-white;
+
+        &::-webkit-input-placeholder
+        {
+            color: $font-violet;
+        }
+        &:-ms-input-placeholder
+        {
+            color: $font-violet;
+        }
+        &::-ms-input-placeholder
+        {
+            color: $font-violet;
+        }
+        &:-moz-placeholder
+        {
+            color: $font-violet;
+            opacity: 1;
+        }
+        &::-moz-placeholder
+        {
+            color: $font-violet;
+            opacity: 1;
+        }
+        &::placeholder
+        {
+            color: $font-violet;
+            opacity: 1;
+        }
+    }
+}
+.callback__form form
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+.callback__btn
+{
+    font-size: 14px;
+
+    padding: 15px;
+}
+
+@media #{$tablet-widths}
+{
+    .callback
+    {
+        padding-top: 68px;
+        padding-bottom: 70px;
+    }
+    .callback__container
+    {
+        max-width: 945px;
+    }
+    .callback__form form
+    {
+        flex-direction: row;
+    }
+    .callback__title
+    {
+        margin-bottom: 25px;
+    }
+    .callback__text
+    {
+        margin-bottom: 22px;
+
+        text-align: center;
+    }
+    .callback__form input
+    {
+        margin-bottom: 0;
+        padding: 19px 28px;
+    }
+
+    .callback__form input[type='text']
+    {
+        width: 30.5%;
+    }
+    .callback__form input[type='tel']
+    {
+        width: 34.7%;
+    }
+    .callback__btn
+    {
+        width: 30.5%;
+        margin: 0;
+    }
+}
+
+@media #{$tablet-widths}
+{
+    .callback
+    {
+        padding-bottom: 75px;
+    }
+    .callback__title
+    {
+        margin-bottom: 40px;
+    }
+    .callback__form input
+    {
+        padding: 20px 28px;
+    }
+    .callback__btn
+    {
+        font-size: 18px;
+    }
+}

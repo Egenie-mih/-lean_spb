@@ -1,0 +1,289 @@
+.advantages
+{
+    position: relative;
+
+    padding: 30px 0 10px;
+
+    color: $font-violet;
+
+    &::before
+    {
+        position: absolute;
+        z-index: 2;
+        top: -14px;
+        left: 0;
+
+        width: 100%;
+        height: 18px;
+
+        content: '';
+
+        background: url('../img/zigzag.svg') repeat;
+    }
+
+    &::after
+    {
+        position: absolute;
+        z-index: 2;
+        bottom: -17px;
+        left: 0;
+
+        width: 100%;
+        height: 18px;
+
+        content: '';
+
+        background: url('../img/round.svg') repeat;
+        background-size: 100% 18px;
+    }
+}
+.advantages__container
+{
+    display: flex;
+    flex-direction: column;
+
+    @include container();
+}
+.advantages__title
+{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.advantages__list
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+}
+.advantages__item
+{
+    position: relative;
+
+    margin-bottom: 30px;
+    padding: 0 16px;
+
+    list-style: none;
+
+    &::before
+    {
+        position: absolute;
+        top: -10px;
+        left: 16px;
+
+        content: '';
+
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    &--staff::before
+    {
+        width: 77px;
+        height: 77px;
+
+        background-image: url('../img/staff.png');
+        background-size: 77px 77px;
+    }
+    &--ecology::before
+    {
+        width: 77px;
+        height: 106px;
+
+        background-image: url('../img/ecology.png');
+        background-size: 77px 81px;
+    }
+    &--safety::before
+    {
+        top: -25px;
+
+        width: 64px;
+        height: 77px;
+
+        background-image: url(../img/safety.png);
+        background-size: 64px 71px;
+    }
+    &--entity::before
+    {
+        width: 69px;
+        height: 83px;
+
+        background-image: url('../img/entity.png');
+        background-size: 69px 83px;
+    }
+    &--test::before
+    {
+        top: 40px;
+        right: 0;
+        left: 0;
+
+        width: 184px;
+        height: 154px;
+        margin: 0 auto;
+
+        background-image: url('../img/freetest.png');
+        background-size: 184px 154px;
+    }
+}
+.advantages__benefit
+{
+    font-size: 16px;
+    line-height: 24px;
+
+    max-width: 147px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 90px;
+
+    text-transform: uppercase;
+
+    &--test
+    {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-bottom: 174px;
+        padding-left: 0;
+    }
+}
+.advantages__description
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+    margin: 0;
+    margin-bottom: 15px;
+}
+.advantages__call
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+
+    margin: 0;
+}
+.advantages__phone
+{
+    font-weight: 700;
+
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $font-violet;
+}
+.advantages__btn
+{
+    display: none;
+}
+
+@media #{$tablet-widths}
+{
+    .advantages
+    {
+        padding-right: 0;
+        padding-bottom: 63px;
+        padding-left: 0;
+    }
+    .advantages__container
+    {
+        max-width: 945px;
+    }
+
+    .advantages__list
+    {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .advantages__item
+    {
+        box-sizing: border-box;
+        width: 47.9%;
+        padding: 0;
+        padding-left: 140px;
+        &::before
+        {
+            top: 0;
+            left: 10px;
+        }
+        &--staff::before
+        {
+            width: 110px;
+            height: 101px;
+
+            background-image: url('../img/staff.png');
+            background-size: 110px 101px;
+        }
+        &--ecology::before
+        {
+            width: 110px;
+            height: 106px;
+
+            background-image: url('../img/ecology.png');
+            background-size: 110px 106px;
+        }
+        &--safety::before
+        {
+            width: 110px;
+            height: 132px;
+
+            background-image: url('../img/safety.png');
+            background-size: 110px 132px;
+        }
+        &--entity::before
+        {
+            width: 110px;
+            height: 116px;
+
+            background-image: url('../img/entity.png');
+            background-size: 110px 116px;
+        }
+        &--test
+        {
+            box-sizing: content-box;
+            margin: 23px auto;
+            padding-left: 313px;
+        }
+        &--test::before
+        {
+            width: 292px;
+            height: 244px;
+            margin: 0;
+
+            background-image: url('../img/freetest.png');
+            background-size: 292px 244px;
+        }
+    }
+    .advantages__benefit
+    {
+        width: auto;
+        margin: 0;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        padding-left: 0;
+
+        text-align: left;
+    }
+    .advantages__phone
+    {
+        display: none;
+    }
+    .advantages__btn
+    {
+        display: block;
+
+        margin: 0;
+
+        align-self: flex-end;
+    }
+}

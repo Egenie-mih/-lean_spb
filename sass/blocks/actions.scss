@@ -1,0 +1,131 @@
+.actions
+{
+    padding: 45px 0;
+
+    color: $font-white;
+    background-color: $bg-blue;
+}
+.actions__container
+{
+    @include container();
+}
+
+.actions__title
+{
+    font-size: 32px;
+    line-height: 40px;
+
+    margin: 0;
+    margin-bottom: 26px;
+    padding: 0 38px;
+
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.actions__list
+{
+    margin: 0;
+    padding: 0;
+
+    counter-reset: item;
+}
+.actions__item
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 25px;
+    padding-left: 38px;
+
+    list-style-type: none;
+
+    text-align: start;
+    /*   text-indent: -2ch; */
+    &:last-child
+    {
+        margin-bottom: 0;
+    }
+    &::before
+    {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        /*   width: 10px; */
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        content: counter(item) '';
+        counter-increment: item;
+
+        color: $font-white;
+    }
+}
+.actions__image
+{
+    display: none;
+}
+@media #{$tablet-widths}
+{
+    .actions
+    {
+        padding: 85px 0 60px;
+    }
+    .actions__container
+    {
+        display: -webkit-flex;
+        display:     -ms-flex;
+        display:         flex;
+        flex-direction: row;
+
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .actions__text
+    {
+        width: 438px;
+    }
+    .actions__title
+    {
+        margin-bottom: 38px;
+        padding: 0;
+
+        text-align: left;
+    }
+    .actions__list
+    {
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .actions__item
+    {
+        margin-bottom: 20px;
+    }
+    .actions__image
+    {
+        display: block;
+
+        width: 282px;
+    }
+}
+@media #{$desktop-widths}
+{
+    .actions
+    {
+        padding: 82px 0 52px;
+    }
+    .actions__text
+    {
+        width: 465px;
+    }
+    .actions__title
+    {
+    }
+}
