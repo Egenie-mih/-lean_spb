@@ -54,7 +54,7 @@ gulp.task("symbols", function() {
         .pipe(gulp.dest("build/img"));
 });
 
-gulp.task('beautify', function () {
+gulp.task("beautify", function () {
     return gulp.src("sass/**/*.scss")
         .pipe(csscomb())
         .pipe(gulp.dest("sass"));
@@ -80,6 +80,7 @@ gulp.task('deploy', function () {
 gulp.task("build", function(fn) {
   run(
     "clean",
+    "beautify",
     "copy",
     "style",
     "images",
@@ -88,17 +89,13 @@ gulp.task("build", function(fn) {
   );
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: ".",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html"), ["html:update"];
 });
 
 gulp.task("copy", function () {

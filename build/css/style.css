@@ -581,7 +581,7 @@ body
 
 .page-header__container
 {
-    position: relative; 
+    position: relative;
 
     display: -ms-flexbox;
     display: flex;
@@ -1266,17 +1266,17 @@ body
 }
 .callback__form input::-webkit-input-placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #321e68;
 }
 .callback__form input:-ms-input-placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #321e68;
 }
 .callback__form input::placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #321e68;
 }
 

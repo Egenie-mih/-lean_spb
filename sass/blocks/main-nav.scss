@@ -1,10 +1,10 @@
 .main-nav
 {
     background-color: $bg-white;
-    &--opened{
-      display: block;
+    &--opened
+    {
+        display: block;
     }
-
 }
 .main-nav__list
 {
@@ -39,14 +39,17 @@
     color: $font-violet;
     border-bottom: 1px solid #e8e8e8;
 }
-@media screen and (max-width: 767px) {
-  .main-nav--close .main-nav__item {
-    display: none;
-  }
+@media screen and (max-width: 767px)
+{
+    .main-nav--close .main-nav__item
+    {
+        display: none;
+    }
 
-  .main-nav--opened .main-nav__item {
-    display: block;
-  }
+    .main-nav--opened .main-nav__item
+    {
+        display: block;
+    }
 }
 @media #{$tablet-widths}
 {
