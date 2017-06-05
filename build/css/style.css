@@ -520,6 +520,33 @@ body
     background-color: #fff;
 }
 
+@font-face
+{
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/RobotoCondensedRegular.woff2') format('woff2'), url('../fonts/RobotoCondensedRegular.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-style: bold;
+
+    src: url('../fonts/RobotoCondensedBold.woff2') format('woff2'), url('../fonts/RobotoCondensedBold.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    font-style: lighter;
+
+    src: url('../fonts/RobotoCondensedLight.woff2') format('woff2'), url('../fonts/RobotoCondensedLight.woff') format('woff');
+}
+
 .btn
 {
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
@@ -589,6 +616,8 @@ body
 
     padding: 0;
 
+    text-align: center;
+
     -ms-flex-direction: column;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -597,6 +626,7 @@ body
 .page-header__nav-btn
 {
     font-size: 0;
+    line-height: 0;
 
     position: absolute;
     top: 23px;
@@ -606,6 +636,11 @@ body
 
     width: 30px;
     height: 26px;
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background-color: transparent;
 }
 .page-header__nav-btn::after
 {
@@ -670,6 +705,8 @@ body
 
 .logo
 {
+    display: block;
+
     padding: 11px 0 18px;
 
     text-align: center;
@@ -813,7 +850,7 @@ body
 {
     position: absolute;
     z-index: 2;
-    top: -1px;
+    top: -3px;
     left: 0;
 
     width: 100%;
@@ -1480,6 +1517,11 @@ body
     display: none;
 }
 
+.service__link
+{
+    color: #321e68;
+}
+
 .service__image
 {
     text-align: center;
@@ -1623,7 +1665,7 @@ body
 {
     position: absolute;
     z-index: 2;
-    top: -1px;
+    top: -3px;
     left: 0;
 
     width: 100%;
@@ -1880,6 +1922,8 @@ body
         padding-right: 15px;
         padding-left: 15px; 
 
+        text-align: left;
+
         -ms-flex-direction: row;
         -ms-flex-align: center;
         align-items: center;
@@ -1939,6 +1983,7 @@ body
     }
     .promo
     {
+        min-height: 330px;
         padding: 55px 0;
     }
     .promo__title
@@ -1967,7 +2012,8 @@ body
     .promo__image
     {
         position: absolute;
-        top: 0;
+        z-index: 0;
+        top: 7px;
         right: 10px;
     }
     .promo__image img
@@ -2217,6 +2263,8 @@ body
     }
     .page-footer__links
     {
+        display: block;
+
         width: 140px;
         margin-right: 0;
         margin-bottom: 20px;
@@ -2538,6 +2586,13 @@ body
         padding-right: 10px;
         padding-left: 10px;
     }
+    .promo__text
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        width: 450px;
+    }
     .clients__container
     {
         max-width: 946px;
@@ -2702,7 +2757,7 @@ body
     }
 }
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 750px)
 {
     .main-nav--close .main-nav__item
     {
