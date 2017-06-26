@@ -85,11 +85,11 @@
     }
     &--staff::before
     {
-        width: 77px;
-        height: 77px;
+        width: 64px;
+        height: 64px;
 
         background-image: url('../img/staff.png');
-        background-size: 77px 77px;
+        background-size: 64px 64px;
     }
     &--ecology::before
     {
@@ -151,7 +151,8 @@
         padding-left: 0;
     }
 }
-.advantages__description
+.advantages__description,
+.advantages__item p
 {
     font-size: 14px;
     font-weight: 300;

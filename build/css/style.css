@@ -806,7 +806,8 @@ body
     color: #321e68;
 }
 
-.promo__text
+.promo__text,
+.promo p
 {
     font-size: 13px;
     font-weight: lighter;
@@ -881,7 +882,8 @@ body
     text-transform: uppercase;
 }
 
-.clients__text
+.clients__text,
+.clients p
 {
     font-size: 16px;
     line-height: 20px;
@@ -1008,11 +1010,11 @@ body
 }
 .advantages__item--staff::before
 {
-    width: 77px;
-    height: 77px;
+    width: 64px;
+    height: 64px;
 
     background-image: url('../img/staff.png');
-    background-size: 77px 77px;
+    background-size: 64px 64px;
 }
 .advantages__item--ecology::before
 {
@@ -1074,7 +1076,8 @@ body
     padding-left: 0;
 }
 
-.advantages__description
+.advantages__description,
+.advantages__item p
 {
     font-size: 14px;
     font-weight: 300;
@@ -1257,7 +1260,8 @@ body
     text-transform: uppercase;
 }
 
-.callback__text
+.callback__text,
+.callback p
 {
     font-size: 16px;
     font-weight: 300;
@@ -1407,6 +1411,9 @@ body
 
 .error__inner
 {
+    font-size: 16px;
+    line-height: 20px;
+
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
@@ -1538,7 +1545,8 @@ body
     text-transform: uppercase;
 }
 
-.service__text
+.service__text,
+.service p
 {
     font-size: 16px;
     line-height: 20px;
@@ -1546,7 +1554,8 @@ body
     margin: 0;
     margin-bottom: 22px;
 }
-.service__text--important
+.service__text--important,
+.service p--important
 {
     font-weight: 700;
 }
@@ -1558,6 +1567,9 @@ body
 
 .actions
 {
+    font-size: 16px;
+    line-height: 20px;
+
     padding: 45px 0;
 
     color: #fff;
@@ -1638,6 +1650,9 @@ body
 
 .price
 {
+    font-size: 16px;
+    line-height: 20px;
+
     position: relative;
     position: relative; 
 
@@ -1821,7 +1836,8 @@ body
     text-transform: uppercase;
 }
 
-.catalog__main-text
+.catalog__main-text,
+.catalog p
 {
     font-size: 16px;
     line-height: 20px;
@@ -1894,7 +1910,8 @@ body
     text-transform: uppercase;
 }
 
-.catalog__item-text
+.catalog__item-text,
+.catalog__list p
 {
     font-size: 14px;
     line-height: 20px;
@@ -1996,7 +2013,8 @@ body
 
         letter-spacing: 4px;
     }
-    .promo__text
+    .promo__text,
+    .promo p
     {
         font-size: 18px;
         line-height: 24px;
@@ -2034,7 +2052,8 @@ body
         margin: 0 auto;
         margin-bottom: 30px;
     }
-    .clients__text
+    .clients__text,
+    .clients p
     {
         width: 555px;
         margin: 0 auto;
@@ -2042,6 +2061,8 @@ body
     }
     .clients img
     {
+        max-width: 160px;
+        max-height: 210px;
         margin: 0 auto;
 
         text-align: center;
@@ -2586,7 +2607,8 @@ body
         padding-right: 10px;
         padding-left: 10px;
     }
-    .promo__text
+    .promo__text,
+    .promo p
     {
         font-size: 22px;
         line-height: 28px;

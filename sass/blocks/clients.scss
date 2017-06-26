@@ -26,7 +26,8 @@
 
     text-transform: uppercase;
 }
-.clients__text
+.clients__text,
+.clients p
 {
     font-size: 16px;
     line-height: 20px;
@@ -60,7 +61,8 @@
         margin: 0 auto;
         margin-bottom: 30px;
     }
-    .clients__text
+    .clients__text,
+    .clients p
     {
         width: 555px;
         margin: 0 auto;
@@ -70,6 +72,8 @@
     {
         img
         {
+            max-width: 160px;
+            max-height: 210px;
             margin: 0 auto;
 
             text-align: center;

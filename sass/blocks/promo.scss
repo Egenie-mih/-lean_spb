@@ -23,7 +23,8 @@
 
     color: $font-violet;
 }
-.promo__text
+.promo__text,
+.promo p
 {
     font-size: 13px;
     font-weight: lighter;
@@ -69,7 +70,8 @@
 
         letter-spacing: 4px;
     }
-    .promo__text
+    .promo__text,
+    .promo p
     {
         font-size: 18px;
         line-height: 24px;
@@ -104,7 +106,8 @@
 }
 @media #{$desktop-widths}
 {
-    .promo__text
+    .promo__text,
+    .promo p
     {
         font-size: 22px;
         line-height: 28px;
